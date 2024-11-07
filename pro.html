@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <style>
+        nav{
+            background-color:white;
+            color: white;
+            position:absolute;
+            top:0px;
+            left:0px;
+            width:100%;
+            padding-top:10px;
+            height:50px;
+        }
+        img{
+            margin-left: 50px;
+            
+        }
+        input{
+            padding: 10px;
+            border-radius: 50px;
+            border-color:transparent;
+            margin-left: 30px;
+            width: 200px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+            background-color:whitesmoke;
+        }
+        #yid{
+            color:#f86960;
+            margin-left: 50px;        
+        }
+        #myid{
+            margin-left: 50px;
+            color: black;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        a{
+           margin-left: 50px;
+           font-size:25px;
+           padding: 10px;
+           font-family:'Times New Roman', Times, serif;
+           color:black;
+           text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            text-decoration-color:aqua;
+            color:aqua;
+            text-decoration-thickness: 3px;
+            text-decoration-line:underline;
+        }
+        p{
+            margin-left:150px;
+            font-size: 30px;
+        }
+        #child1{grid-area: a1;}
+        #child2{grid-area: b1;}
+        #child3{grid-area: c1;}
+        #child4{grid-area: d1;}
+        #child5{grid-area: e1;}
+        #child6{grid-area: f1;}
+      .parent{
+        display: grid;
+        grid-template-areas: 'a1 b1 c1' 'd1 e1 f1';
+    }
+    .parent > div{
+        padding:10px;
+        border: 1px solid black;
+        margin: 5px;
+        background-color:lavender;
+        width:500px;
+        height:500px;
+        color: black;
+        box-shadow: 0px 0px 10px black;
+       }
+       p1{
+         font-size: 14px;
+       }
+       p2{
+        font-size: 14px;
+       }
+       p3{
+        font-size:14px;
+       }
+       p4{
+        font-size: 14px;
+       }
+       p5{
+        font-size: 14px;
+       }
+       p6{
+        font-size: 14px;
+       }
+       button{
+        background-color:red;
+        color: white;
+        margin-left:310px;
+        border-color: transparent;
+        width:100px;
+        height:30px;
+        border-radius: 5px;
+       }
+       footer{
+        position:relative;
+        /* top: 100px; */
+        bottom: 0px;
+        left: 0px;
+        /* right: 0px; */
+        width: 100%;
+        height: 900%;
+        font-size: 15px;
+        padding: 10px;
+       }
+       #list1{
+           /* padding: 10px;
+           font-size: 15px;
+           line-height: 30px;
+           font-weight: 600px;
+           color:rgb(52,45,45); */
+           margin-left: 200px;
+           left:10%;
+           top:30%;
+       }
+       #a{
+           padding: 10px;
+           font-size: 15px;
+           line-height: 30px;
+           font-weight: 600px;
+           color:rgb(52,45,45);
+       }
+       #list3{
+        position: absolute;
+        bottom:42%;
+       }
+       b{
+        font-size: 15px;
+        margin-left: 15%;
+        font-weight: bolder;
+       }
+       #list{
+        position:absolute;
+        bottom:42%;
+        margin-left:25%;
+       }
+       select{
+        position: absolute;
+        margin-left: 27%;
+        top:55%;
+        border-radius: 5px;
+        border-color:gray;
+        padding: 5px;
+       }
+       #id{
+        position:absolute;
+        margin-left: 39%;
+        top:15%;  
+       }
+       #list4{
+        position: absolute;
+        margin-left: 55%;
+        top:16%;
+       }
+       #list5{
+        position: absolute;
+        margin-left: 55%;
+        top:27%;
+        color: #3d81bb;
+       }
+       #list6{
+        margin-left:56%;
+        position: absolute;
+        top:48%;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-weight: 100px;
+       }
+       lable,i{
+        margin-left:56%;
+        position:absolute;
+        top:58%;
+       }
+       .c{
+            color: transparent;
+            background-image:linear-gradient( 	#1877F2,#898F9C,	#000000);
+            -webkit-background-clip: text;
+            font-size:30px;
+       }
+       .d{
+        color: transparent;
+        background-image: linear-gradient( #5b51d8,#c13584, #f77737,#833ab4,#e1306c,#fd1d1d,#405de6);
+        -webkit-background-clip: text;
+        font-size: 30px;
+        margin-left:59%;
+        
+    }
+    .e{
+        color: transparent;
+        background-image: linear-gradient(#1DA1F2,#14171A,#657786,#AAB8C2,#E1E8ED,#F5F8FA);
+        -webkit-background-clip: text;
+        font-size: 30px;
+        margin-left: 62%;
+    }
+   </style>
+</head>
+<body>
+    <nav>
+        <img src="https://www.holidify.com/res/images/icons/holidify-logo.svg" width="100px">
+        <input type="text" placeholder="Search for places to visit">
+        <a id="myid" href="https://agents.holidify.com/">Join as travel agent</a>
+        <a id="yid">Log in/Sign up</a>
+        <hr>
+        <br>
+        <a href="https://www.holidify.com/state/karnataka/">Karnataka</a>
+        <a href="https://www.holidify.com/state/karnataka/packages.html">Packages</a>
+        <a href="https://www.holidify.com/state/karnataka/top-destinations-places-to-visit.html">Places To Visit</a>
+        <a href="https://www.holidify.com/state/karnataka/photos.html">Photos</a>
+        <a href="https://www.holidify.com/state/karnataka/best-time-to-visit.html">Best Time To Visit</a>
+        <a href="https://www.holidify.com/state/karnataka/map-view.html">Map View</a>
+    </nav>
+    <br><br><br><br><br><br><br> <br><br>
+   <p> Here is the list of 26 Amazing Historical Places in Karnataka</p>
+
+   <div class="parent">
+    <div id="child1">
+        <img src="https://www.holidify.com/images/tooltipImages/HAMPI.jpg" width="410px">
+        <p1>Hampi, the city of ruins, is a UNESCO World Heritage Site. Situated in the shadowed depth of hills and valleys, Hampi is a very significant historical place in Karnataka and a delight for travellers. Surrounded by 500 ancient monuments, beautiful temples, bustling street markets, bastions, treasury building and captivating remains of Vijayanagar Empire, Hampi is an open museum with 100+ locations to explore and a favourite way to see the city from the perspective of its history.</p1>
+        <button>Read More</button>    
+   </div>
+    <div id="child2">
+        <img src="https://www.holidify.com/images/tooltipImages/BIJAPUR.jpg" width="430px">
+    <p2>Famous for the Gol Gumbaj and other historical places in Karnataka, Bijapur is a tourist destination that takes one back to the days gone by from the royal era. Built around the 10th-11th century by the Kalyani Chalukyas, Bijapur was known as Vijayapura in those times. Evidence suggests that this area has been inhabited since the Stone Age, and many places of this district have a legendary history.</p2> 
+    <button>Read More</button>
+</div>
+    <div id="child3">
+        <img src="https://www.holidify.com/images/tooltipImages/SHIMOGA.jpg" width="430px">
+    <p3>  The history of Karnataka is not complete without Shimoga. With nature in its full bloom, the town of Shimoga has been home to several great dynasties and kingdoms. The history Shimoga dates back to at least 2,000 years to 3rd Century AD. Shimoga has been under the rule of various rulers and dynasties, from the Mauryas, Satavahanas, Kadambas of Banvasi, Chalukyas, Rashtrakutas, and rulers of the Vijayanagara kingdom. Due to this, Shimoga houses many historical monuments.</p3> 
+    <button>Read More</button>
+</div>
+    <div id="child4">
+        <img src="https://www.holidify.com/images/tooltipImages/AIHOLE.jpg" width="420px">
+    <p4>Home to over 125 beautiful Chalukyan temples and monuments, Aihole is a historical site in Bagalkot, Karnataka. It was declared a UNESCO World Heritage site and is surrounded by marvellous sandstone hills and villages on the banks of the Malaprabha River. It was formerly the capital of the Chalukya Dynasty with over 100 Hindu and Jain temples dating back to around 6th to 12th century. Today, Aihole is a prominent centre for temple architecture and intricate stonework.</p4>
+    <button>Read More</button>
+</div>
+    <div id="child5"> 
+        <img src="https://www.holidify.com/images/bgImages/MYSORE.jpg" width="410px">
+    <p5>Famously known as The City of Palaces, it wouldn’t be wrong to say that Mysore, currently Mysuru, is one of the most important places in the country regarding ancient reigns. It is replete with the history of its dazzling royal heritage, intricate architecture, its famed silk sarees, yoga, and sandalwood, to name just a few. Located in the foothills of the Chamundi Hills, Mysore is the third most populated city in Karnataka, and its rich heritage draws millions of tourists all year round. The highlight is the majestic Mysore Palace, a UNESCO World Heritage Site, which is a must-visit.</p5>
+    <button>Read More</button>
+</div>
+    <div id="child6"> 
+        <img src="https://www.holidify.com/images/cmsuploads/compressed/Mahakuta_group_of_temples3_at_Mahakuta_20180306171259.jpg" width="410px"> 
+    <p6>Situated on the outskirts of Badami in the tiny village of Mahakuta, the Mahakuta group of temples are an architectural delight, mirroring the unique rock-cut construction pattern of the Chalukyas seen across Badami. These temples combine the ancient architectural elements of the Dravidian and Nagara styles, as is seen at the various temples of this region. Once the royal capital of the Chalukyas, Badami continues to enjoy a unique place, being the home to a number of examples of Dravidian architecture making it the cornerstone of historical places in Karnataka.</p6>
+    <button>Read More</button>
+</div>
+</div>
+<footer>
+    <hr>
+    <div id="a">
+        <img src="https://www.holidify.com/res/images/icons/holidify-logo.svg" width="100px" id="list3">
+        <b>Explore Holidify</b>
+        <ul type="none" id="list1">
+            <li>Packages</u></li>
+            <li>Hotels</li>
+            <li>Destinations</li>
+            <li>Collections</li>
+            <li>About Us</li>
+        </ul>
+        <ul type="none" id="list">
+            <li>Currency</u></li>
+        </ul>
+        <select>
+            <option>INR</option>
+            <option>Currency</option>
+            <option>USD</option>
+            <option>GBP</option>
+            <option>AED</option>
+            <option>EUR</option>
+            <option>THB</option>
+        </select>
+        <b id="id">Travel Agent?
+        </b>
+        <!-- <p href="https://agents.holidify.com/">Buy Travel Leads</p> -->
+        <b id="list4">Need help with tour packages?
+        </b>
+        <b id="list5">Fill this form to get a callback</b>
+        <b id="list6"> Follow us </b>
+        <label><i class="fa-brands fa-facebook c"></i></label>
+        <label><i class="fa-brands fa-instagram d"></i></label>
+        <label><i class="fa-brands fa-x-twitter e"></i></label>
+
+</footer>
+</body>
+</html>
